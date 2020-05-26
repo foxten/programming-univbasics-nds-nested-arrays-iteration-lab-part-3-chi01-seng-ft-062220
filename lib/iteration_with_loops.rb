@@ -1,9 +1,9 @@
 def join_nested_strings(src)
   count = 0
   strings = []
+  potential_string =""
   while count < src.count do
     inner_count = 0
-    potential_string.length = 0
       while inner_count < src[count].count do
         if src[count][inner_count].length > potential_string.length
           strings << src[count][inner_count]
