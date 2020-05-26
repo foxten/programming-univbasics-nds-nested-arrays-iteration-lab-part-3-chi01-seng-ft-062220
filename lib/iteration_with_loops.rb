@@ -1,5 +1,6 @@
 def join_nested_strings(src)
   count = 0
+  strings = []
   while count < src.count do
     inner_count = 0
       while inner_count < src[count].count do
@@ -10,5 +11,5 @@ def join_nested_strings(src)
     end
       count +=1
   end      
-
+  strings.join
 end
