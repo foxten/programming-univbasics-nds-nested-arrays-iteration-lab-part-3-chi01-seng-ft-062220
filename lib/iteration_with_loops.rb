@@ -3,9 +3,8 @@ def join_nested_strings(src)
   strings = []
   while count < src.count do
     inner_count = 0
-    potential_string =""
       while inner_count < src[count].count do
-        if src[count][inner_count].length > potential_string.length
+        if src[count][inner_count].class == string
           strings << src[count][inner_count]
         end
       inner_count +=1
